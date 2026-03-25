@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>WebPhone OS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="lock" class="lock hidden">
+  <div class="lock-content">
+    <h2>🔒</h2>
+    <input type="password" id="passInput" placeholder="Senha">
+    <button onclick="unlock()">Entrar</button>
+  </div>
+</div>
+
+<div class="phone" id="phone">
+  <div class="status">📶 12:00 🔋</div>
+  <div class="screen" id="screen"></div>
+  <div class="dock">
+    <div onclick="home()">🏠</div>
+    <div onclick="openApp('browser')">🌐</div>
+    <div onclick="openApp('gallery')">🖼️</div>
+    <div onclick="openApp('settings')">⚙️</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
